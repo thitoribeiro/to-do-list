@@ -17,4 +17,9 @@ router.post('/', (req, res) => {
     res.status(200).send(req.body);
 })
 
+router.put('/:id', (req, res) => {
+    console.log(req.params.id);
+    res.send(`PUT ID: ${req.params.id}`);
+})
+
 module.exports = router;
