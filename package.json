@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/thitoribeiro/to-do-list#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
