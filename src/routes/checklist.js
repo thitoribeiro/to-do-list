@@ -4,9 +4,13 @@ const router = express.Router();
 
 const Checklist = require('../models/checklist');
 
-router.get('/', (req, res) => {
-    console.log('Olá');
-    res.send();
+router.get('/', async (req, res) => {
+    try {
+        let checklist = await Checklist.find({});
+        res.status(200).send(checklist);
+    } catch {
+        res.status(500).json(error)
+    }
 })
 
 router.get('/:id', (req, res) => {
